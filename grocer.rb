@@ -70,5 +70,5 @@ def checkout(cart, coupons) #must use whats called in arg.
                 cart_total += properties[:price] * properties[:count] #mult. price with count of properties in cart
               end
                   #10% 100> #should just be cart_total bc thats what we're apply disc. to & not [:price]
-                  cart_total = cart_total * 0.90 if cart_total > 100 
+                  cart_total = cart_total * 0.90 if cart_total > 100
           end
