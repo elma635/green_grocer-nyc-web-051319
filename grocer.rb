@@ -64,11 +64,11 @@ end
 def checkout(cart, coupons) #must use whats called in arg.
    consolidated_cart = consolidate_cart(cart) #calling method with it's argument, c_c(cart), also bc we're calling it wihtin this arg.
       couponed_cart = apply_coupons(consolidated_cart, coupons) # consolidate_cart(cart) bc it's included & as a placeholder  #^ same reasoning.
-        final_cart = apply_clearance(couponed_cart) #finalcart calling apply_clearance method. 
+        final_cart = apply_clearance(couponed_cart) #finalcart calling apply_clearance method.
           cart_total = 0
             final_cart.each do |item, properties|
                 cart_total += properties[:price] * properties[:count]
+              end
                     cart_total = [:price] * 0.80 > 100
 
-            end
           end
