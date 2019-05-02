@@ -69,6 +69,6 @@ def checkout(cart, coupons) #must use whats called in arg.
             final_cart.each do |item, properties|
                 cart_total += properties[:price] * properties[:count] #mult. price with count of properties in cart
               end
-                    cart_total = [:price] * 0.90 > 100 
+                    cart_total = cart_total * 0.90 > 100 #10% 100> #should just be cart_total bc thats what we're apply disc. to & not [:price]
 
           end
